@@ -1,0 +1,25 @@
+Karmic	Scenario Description	Expected Result	QA Comments
+[Story ID]: Third party links in Member Clinical View (MCV) - More menu	Verify if the user is able to login to Jiva	User should be able to login to Jiva and land on the Dashboard	
+	Verify user is able to open Member Search and search a member using Member ID and Member ID Type (ELIG Member ID)	Member Search results shall display for the searched Member ID	
+	Verify system shall redirect the user to the MCV (Member Clinical View) of the member after the member search	MCV shall open and display the member header (Name, DOB, Member ID, Risk Score, Episodes, Address, Coverage, Group, PCP/PCM) and the All (Member + Episode), Member and Episode tabs	
+	Verify the More menu is displayed on the MCV when the user clicks More	More menu shall list ACFC Online Help Tool, ACFC Preferred Contacts and Population Health Portal along with other links	
+	Verify user is able to click on ACFC Online Help Tool from the More menu	System shall open the ACFC Online Help Tool window titled with the member name and tool ID	
+	Verify ACFC Online Help Tool does not display error 401 - Unauthorized when third party cookies are enabled for the third party site	Online Help page shall load without a 401 - Unauthorized / Server Error	
+	Verify ACFC Online Help Tool opens in the same window (inside Jiva) and not in a new browser window	Online Help shall open in the same window with the Jiva top navigation bar still visible	
+	Verify the Online Help page displays its sections (AmeriHealth Caritas Next Operations, Pharmacy Online Help, Contact Center, Enterprise Clinical Strategy & Performance) and the external links under them	All sections and links shall be displayed	
+	Verify the behavior of ACFC Online Help Tool when third party cookies are blocked (negative scenario)	System shall not allow access and the 401 - Unauthorized message is displayed; link shall work after cookies are enabled	
+	Verify user is able to close or minimize the ACFC Online Help Tool window and return to the MCV	Window shall close or minimize and the user shall remain on the same member MCV	
+	Verify user is able to click on ACFC Preferred Contacts from the More menu	System shall open the Member Contact Information page	
+	Verify ACFC Preferred Contacts opens in a new window	Member Contact Information shall open in a new browser window/tab and Jiva remains open	
+	Verify the Member Contact Information header shows Member ID, First Name, Middle Name, Last Name and Preferred Channel	Header details shall be displayed and match the selected member	
+	Verify the Address tab displays contact details (Contact Type, Contact Name, Address Type, Address Line 1 and 2, City, Zip, State, Country, Contact Status, Last Modified Date and Source, Create Date and Source, Contact Category)	Address records shall be displayed with all columns	
+	Verify the Phone tab displays contact details (Contact Type, Contact Name, Phone Number, Ability To Receive Text, Phone Type, Preferred Days & Time, Contact Status, Last Modified Date and Source, Create Date and Source, Contact Category)	Phone records shall be displayed with all columns	
+	Verify the Email tab displays email records, or the message No records found for Email when none exist	Email records shall be displayed, or No records found for Email message shall be displayed	
+	Verify user is able to switch between the Address, Phone and Email tabs	Selected tab content shall be displayed without error	
+	Verify the contact data displayed belongs to the member selected in the MCV	Member ID and name in Member Contact Information shall match the member in the MCV	
+	Verify user is able to click on Population Health Portal from the More menu	System shall open the Population Health Portal	
+	Verify the Population Health Portal displays the menu tabs: History Data, Claims Data, Eligibility Plus, Members Additional Info, Provider Info, Summary and Prior Auth Lookup Tool	All tabs shall be displayed	
+	Verify Member Eligibility History displays Member Information (Member Name, Date of Birth, Member ID, Alt.Payee) of the selected member	Member information shall match the member in the MCV	
+	Verify the History table displays From, Through, Eligible, Plan, Product and Reason	Eligibility history records shall be displayed with all columns	
+	Verify user is able to navigate between the Population Health Portal tabs	Each tab shall load its content without error	
+	Verify the opened third party windows do not impact the MCV session when the user returns to the MCV	MCV shall remain in the same state and the member shall not change	
